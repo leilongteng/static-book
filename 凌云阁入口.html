@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>凌云阁</title>
+	<style type="text/css">
+		* {
+		 margin: 0px; padding: 0px;
+		}
+		html {
+    		height: 100%;
+		}
+		body {
+			background: url("images/玄幻图片.png");
+			/*background-repeat:no-repeat;*/
+			/*background-color:red;*/
+			/*background-image:url(images/玄幻图片.png);*/
+			background-position: center;
+    		background-size: cover;
+		}
+		.right{
+			height: 300px;
+			width: 400px;
+			/*border: 1px solid red;*/
+			float: right;
+			margin-top: 100px;
+			margin-right: 100px;
+			font-size: 25px;
+			font-family: 楷体;
+			/*background-color: red;*/
+		}
+		#h0{
+			font-size:35px;
+			font-family: 楷体;
+			color: red;
+		}
+		#h3{
+			font-size:20px;
+			font-family: 楷体;
+			height: 25px;
+			width: 45px;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function sup(){
+			var h1=document.getElementById("h1").value;
+			var h2=document.getElementById("h2").value;
+			/*set=h1+","+h2;*/
+		if (h1==""||h2=="") {
+				alert("用户名或密码不能为空！");
+		}
+		else{
+			if (h1!="llt"||h2!="123") {
+				alert("用户名或密码错误！");
+			}
+			else{
+				window.location.replace("秘笈管理系统.html");
+				/*document.write("恭喜登陆成功！");*/
+			}
+		}
+	}
+	    /*alert(set);*/
+	</script>
+	<div class="right">
+		<p align="center" id="h0">藏经阁系统</p>
+		<br />
+		<p align="center">用户名：<input type="text" id="h1" />*</p>
+		<br />
+		<p align="center">密&nbsp;&nbsp;码：<input type="password" id="h2" />*</p>
+		<br />
+		<p align="center"><input type="button" onclick="sup()" value="登录" id="h3" /></p>
+	</div>
+</body>
+</html>
